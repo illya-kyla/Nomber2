@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Головна сторінка | Наша Компанія</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f8fb;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #00bfa5;
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+    }
+    nav {
+      margin-top: 20px;
+      text-align: center;
+    }
+    nav a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 25px;
+      background-color: #e0f7f4;
+      color: #00bfa5;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    }
+    nav a:hover {
+      background-color: #b2f1e7;
+      transform: translateY(-2px);
+    }
+    .main {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .section {
+      margin-bottom: 60px;
+    }
+    h2 {
+      color: #00bfa5;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+    .sections {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .section-box {
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 300px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .section-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    }
+    .cta-button {
+      background-color: #ff6b00;
+      color: white;
+      padding: 15px 30px;
+      font-size: 20px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      margin-top: 30px;
+      opacity: 0;
+      transform: translateY(-50px);
+      animation: slideIn 1.5s forwards;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+    .cta-button:hover {
+      background-color: #ff944d;
+      transform: scale(1.05);
+    }
+    @keyframes slideIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    footer {
+      background-color: #00bfa5;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .contact-bar {
+      background-color: #00997a;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Вітаємо у нашій компанії!</h1>
+  <p>Ваш надійний партнер у створенні сайтів і цифрових рішень</p>
+</header>
+
+<nav>
+  <a href="index.html">Візитка</a>
+  <a href="blog.html">Блог</a>
+   </div><a href="shop.html" class="button">Магазин</a>
+</nav>
+<main class="main">
+  <section class="section">
+    <h2>Про нас</h2>
+    <p>Ми спеціалізуємось на створенні сучасних веб-сайтів, інтернет-магазинів, корпоративних порталів, персональних блогів та багато іншого. Наша команда допомагає втілювати найсміливіші ідеї клієнтів!</p>
+    <p>Розробляємо з любов'ю та уважністю до деталей. Ваш успіх — наша головна мета!</p>
+  </section>
+
+  <section class="section">
+    <h2>Наші послуги</h2>
+    <div class="sections">
+      <div class="section-box">
+        <h3>Створення сайтів</h3>
+        <p>Професійна розробка сайтів "під ключ" будь-якої складності.</p>
+      </div>
+      <div class="section-box">
+        <h3>Інтернет-магазини</h3>
+        <p>Створення магазинів із зручною системою управління товарами.</p>
+      </div>
+      <div class="section-box">
+        <h3>Персональні блоги</h3>
+        <p>Допоможемо створити унікальний блог для вас чи вашого бізнесу.</p>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <h2>Чому саме ми?</h2>
+  <div class="sections">
+      <div class="section-box">
+        <h3>Великий досвід</h3>
+        <p>Понад 5 років у сфері розробки сайтів та IT-послуг.</p>
+      </div>
+      <div class="section-box">
+        <h3>Індивідуальний підхід</h3>
+        <p>Кожен проект — це унікальне рішення, створене для вас.</p>
+      </div>
+      <div class="section-box">
+        <h3>Підтримка клієнтів</h3>
+        <p>Ми завжди на зв'язку, готові допомогти та проконсультувати.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Долучайтесь до нас!</h2>
+    <p>Замовте розробку сайту або консультацію вже сьогодні!</p>
+    <button class="cta-button" onclick="location.href='shop.html'">Замовити послугу</button>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 Наша Компанія. Усі права захищено.</p>
+</footer>
+
+<div class="contact-bar">
+  Email:0955271058ki@gmail.com | Телефон: +380 95 527 10 58 
+</div>
+
+</body>
+</html>

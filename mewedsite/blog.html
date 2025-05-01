@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Блог - Ваш Успіх</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #e0f7fa, #ffffff);
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: #009578;
+    }
+    h2 {
+      font-size: 32px;
+      margin-top: 50px;
+      color: #00796B;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #555;
+      margin: 20px 0;
+    }
+    .posts {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 40px;
+    }
+    .post {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 350px;
+      margin: 15px;
+      padding: 20px;
+      transition: transform 0.3s;
+      text-align: left;
+    }
+    .post:hover {
+      transform: translateY(-10px);
+    }
+    .post h3 {
+      color: #009688;
+      margin-bottom: 10px;
+    }
+    .post p {
+      font-size: 16px;
+      color: #666;
+    }
+    .post .date {
+      font-size: 14px;
+      color: #aaa;
+      margin-bottom: 10px;
+    }
+    .buttons {
+      margin-top: 60px;
+    }
+    .button {
+      background-color: #00b894;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 16px;
+      margin: 10px;
+      transition: background-color 0.3s;
+      display: inline-block;
+    }
+    .button:hover {
+      background-color: #26c6da;
+    }
+    .button-home {
+      background-color: #ff6f00;
+      color: white;
+      padding: 14px 30px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 18px;
+      margin: 10px;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.3s;
+      display: inline-block;
+    }
+    .button-home:hover {
+      background-color: #ff8f00;
+      transform: scale(1.05);
+    }
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      font-size: 14px;
+      color: #aaa;
+      padding-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Блог нашої студії</h1>
+  <p>Ми ділимося успішними кейсами та історіями створення сайтів для відомих компаній.</p>
+
+  <div class="posts">
+    <div class="post">
+      <div class="date">10 квітня 2025</div>
+      <h3>Створили сайт для Епіцентру</h3>
+      <p>Наша команда успішно завершила розробку корпоративного сайту для одного з найбільших рітейлерів України - Епіцентру. Проєкт тривав 2 місяці, і результат перевершив очікування клієнта!</p>
+    </div>
+    <div class="post">
+      <div class="date">20 березня 2025</div>
+      <h3>Запустили новий інтернет-магазин для "ТехноМаркет"</h3>
+      <p>Понад 500 000 товарів на новій платформі! Ми реалізували швидкий пошук, сучасний дизайн та адаптивність для мобільних пристроїв.</p>
+    </div>
+    <div class="post">
+      <div class="date">5 лютого 2025</div>
+      <h3>Створення персонального блогу для ІТ-експерта</h3>
+      <p>Розробили унікальний блог для відомого ІТ-фахівця, який тепер ділиться своїми знаннями з тисячами читачів щодня.</p>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <a href="home.html" class="button-home">Головна</a>
+    <a href="index.html" class="button">Візитка</a>
+    <a href="shop.html" class="button">Магазин</a>
+  </div>
+</div>
+</body>
+</html>

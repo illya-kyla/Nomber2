@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Візитка | Наша Компанія</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>Візитка</h1>
+  <p>Познайомтесь із нашою компанією ближче!</p>
+</header>
+
+<nav>
+  <a href="home.html">Головна</a>
+  <a href="index.html" style="background-color: #ff6b00;">Візитка</a>
+  <a href="blog.html">Блог</a>
+</nav>
+
+<div class="container">
+  <div class="product">
+    <h3>Хто ми?</h3>
+    <p>Ми — команда фахівців, яка створює сучасні сайти та цифрові рішення для бізнесу.</p>
+  </div>
+  <div class="product">
+    <h3>Наші цінності</h3>
+    <p>Якість, надійність та індивідуальний підхід до кожного клієнта.</p>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Наша Компанія</p>
+</footer>
+
+</body>
+</html>

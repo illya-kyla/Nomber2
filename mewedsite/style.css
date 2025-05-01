@@ -1,0 +1,75 @@
+body {
+  background-color: #f0f8ff;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+/* Загальний стиль для всіх пристроїв */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стили для екранів шириною менше 768px (телефони) */
+@media (max-width: 768px) {
+    body {
+        background-color: lightblue;
+    }
+    .container {
+        padding: 10px;
+    }
+}
+
+/* Стили для екранів шириною менше 1024px (iPad) */
+@media (max-width: 1024px) {
+    body {
+        background-color: lightgreen;
+    }
+    .container {
+        padding: 20px;
+    }
+}
+.container {
+  text-align: center;
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #666;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 10px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+  background-color: #45a049;
+  transform: scale(1.1);
+}

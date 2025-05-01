@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Магазин | Наша Компанія</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f8fb;
+      color: #333;
+    }
+
+    header {
+      background-color: #00bfa5;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    nav {
+      background-color: #e0f7f4;
+      text-align: center;
+      padding: 10px;
+    }
+
+    nav a {
+      display: inline-block;
+      margin: 8px 10px;
+      padding: 10px 22px;
+      background-color: #00bfa5;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #00997a;
+      transform: translateY(-2px);
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .product {
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+
+    .product h3 {
+      margin-top: 0;
+      color: #00bfa5;
+    }
+
+    .buy-button {
+      background-color: #00bfa5;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .buy-button:hover {
+      background-color: #00997a;
+    }
+
+    footer {
+      background-color: #00bfa5;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .modal-content {
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      max-width: 400px;
+      margin: 10% auto;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    .modal-content h2 {
+      color: #00bfa5;
+    }
+
+    .close {
+      background-color: #ccc;
+      border: none;
+      border-radius: 20px;
+      padding: 10px 20px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .close:hover {
+      background-color: #bbb;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Магазин Послуг</h1>
+  <p>Обирайте те, що вам потрібно — і ми все зробимо!</p>
+</header>
+
+<nav>
+  <a href="home.html" style="background-color: #ff6b00;">Головна</a>
+  <a href="index.html">Візитка</a>
+  <a href="blog.html">Блог</a>
+</nav>
+<div class="container">
+  <div class="product">
+    <h3>Створення сайту</h3>
+    <p>Сайт будь-якої складності — від 4000 грн</p>
+    <button class="buy-button" onclick="openOrder()">Замовити</button>
+  </div>
+  <div class="product">
+    <h3>Інтернет-магазин</h3>
+    <p>Повноцінний магазин з оплатою і доставкою — від 6500 грн</p>
+    <button class="buy-button" onclick="openOrder()">Замовити</button>
+  </div>
+  <div class="product">
+    <h3>Персональний блог</h3>
+    <p>Блог для себе чи бренду — від 3000 грн</p>
+    <button class="buy-button" onclick="openOrder()">Замовити</button>
+  </div>
+</div>
+
+<!-- Модальне вікно -->
+<div id="orderModal" class="modal">
+  <div class="modal-content">
+    <h2>Дякуємо за замовлення!</h2>
+    <p>Наш менеджер зв’яжеться з вами протягом 24 годин.</p>
+    <button class="close" onclick="closeOrder()">Закрити</button>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 Наша Компанія</p>
+</footer>
+
+<script>
+  function openOrder() {
+    document.getElementById("orderModal").style.display = "block";
+  }
+
+  function closeOrder() {
+    document.getElementById("orderModal").style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    const modal = document.getElementById("orderModal");
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+</body>
+</html>
